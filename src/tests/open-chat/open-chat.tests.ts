@@ -1,5 +1,5 @@
-import { defineChatEndpoint, getChatEndpointRunner } from "qvikchat/endpoints";
-import { setupGenkit } from "qvikchat/genkit";
+import { defineChatEndpoint, getChatEndpointRunner } from "@oconva/qvikchat/endpoints";
+import { setupGenkit } from "@oconva/qvikchat/genkit";
 
 /**
  * Test suite for Open-ended chat endpoint.

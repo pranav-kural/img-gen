@@ -1,5 +1,5 @@
-import { setupGenkit, runServer } from "qvikchat/genkit";
-import { defineChatEndpoint } from "qvikchat/endpoints";
+import { setupGenkit, runServer } from "@oconva/qvikchat/genkit";
+import { defineChatEndpoint } from "@oconva/qvikchat/endpoints";
 
 // Setup Genkit
 setupGenkit({
@@ -12,4 +12,6 @@ defineChatEndpoint({
 });
 
 // Run server
-runServer();
+runServer({
+  port: 3440
+});

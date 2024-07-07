@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      qvikchat:
+      '@oconva/qvikchat':
         specifier: ^1.0.0
         version: 1.0.0(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(fast-xml-parser@4.4.0)(firebase-functions@5.0.1(firebase-admin@12.2.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)(prettier@3.3.2)(typescript@5.5.3)
     devDependencies:
@@ -28,7 +28,7 @@ importers:
         specifier: ^29.5.12
         version: 29.5.12
       eslint:
-        specifier: ^8.56.0
+        specifier: ^8.57.0
         version: 8.57.0
       eslint-config-prettier:
         specifier: ^9.1.0
@@ -1374,6 +1374,9 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@oconva/qvikchat@1.0.0':
+    resolution: {integrity: sha512-PrFGWJBA11K8b+wRDQvjRlKb0enwrLtymS77g1flPcbqd5mU9tAS5iJp7/cs8SHGhDQxdX8h8XMSkXjHSHQmjQ==}
 
   '@opentelemetry/api-logs@0.49.1':
     resolution: {integrity: sha512-kaNl/T7WzyMUQHQlVq7q0oV4Kev6+0xFwqzofryC66jgGMacd0QH5TwfpbUwSTby+SdAdprAe5UKMvBw4tKS5Q==}
@@ -4554,9 +4557,6 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
-  qvikchat@1.0.0:
-    resolution: {integrity: sha512-INJnTjmr3d+TKq7YCK47L6O57jPTcxBKDecehJS/7vzPZ+TzoOFsQMuxvl650GOJTuHyd/7/482haVjaWOJJlQ==}
-
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
@@ -6248,6 +6248,163 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@oconva/qvikchat@1.0.0(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(fast-xml-parser@4.4.0)(firebase-functions@5.0.1(firebase-admin@12.2.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)(prettier@3.3.2)(typescript@5.5.3)':
+    dependencies:
+      '@genkit-ai/ai': 0.5.4
+      '@genkit-ai/core': 0.5.4
+      '@genkit-ai/dotprompt': 0.5.4
+      '@genkit-ai/firebase': 0.5.4(@google-cloud/firestore@7.9.0)(firebase-admin@12.2.0)(firebase-functions@5.0.1(firebase-admin@12.2.0))(prettier@3.3.2)(typescript@5.5.3)
+      '@genkit-ai/flow': 0.5.4
+      '@genkit-ai/google-cloud': 0.5.4(prettier@3.3.2)(typescript@5.5.3)
+      '@genkit-ai/googleai': 0.5.4
+      '@langchain/community': 0.2.17(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(firebase-admin@12.2.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)
+      '@langchain/core': 0.2.14(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))(openai@4.52.3)
+      '@langchain/google-genai': 0.0.21(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))(openai@4.52.3)(zod@3.23.8)
+      '@langchain/openai': 0.2.1(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))
+      d3-dsv: 2.0.0
+      dotenv: 16.4.5
+      firebase-admin: 12.2.0
+      genkitx-chromadb: 0.5.4(openai@4.52.3)
+      genkitx-langchain: 0.5.4(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(firebase-admin@12.2.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)
+      genkitx-openai: 0.10.0(@genkit-ai/ai@0.5.4)(@genkit-ai/core@0.5.4)
+      langchain: 0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3)
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - '@aws-crypto/sha256-js'
+      - '@aws-sdk/client-bedrock-agent-runtime'
+      - '@aws-sdk/client-bedrock-runtime'
+      - '@aws-sdk/client-dynamodb'
+      - '@aws-sdk/client-kendra'
+      - '@aws-sdk/client-lambda'
+      - '@aws-sdk/client-s3'
+      - '@aws-sdk/client-sagemaker-runtime'
+      - '@aws-sdk/client-sfn'
+      - '@aws-sdk/credential-provider-node'
+      - '@azure/search-documents'
+      - '@azure/storage-blob'
+      - '@browserbasehq/sdk'
+      - '@clickhouse/client'
+      - '@cloudflare/ai'
+      - '@datastax/astra-db-ts'
+      - '@elastic/elasticsearch'
+      - '@getmetal/metal-sdk'
+      - '@getzep/zep-cloud'
+      - '@getzep/zep-js'
+      - '@gomomento/sdk'
+      - '@gomomento/sdk-core'
+      - '@gomomento/sdk-web'
+      - '@google-ai/generativelanguage'
+      - '@google-cloud/firestore'
+      - '@google-cloud/storage'
+      - '@google/generative-ai'
+      - '@gradientai/nodejs-sdk'
+      - '@huggingface/inference'
+      - '@layerup/layerup-security'
+      - '@mendable/firecrawl-js'
+      - '@mlc-ai/web-llm'
+      - '@mozilla/readability'
+      - '@neondatabase/serverless'
+      - '@notionhq/client'
+      - '@opensearch-project/opensearch'
+      - '@pinecone-database/pinecone'
+      - '@planetscale/database'
+      - '@premai/prem-sdk'
+      - '@qdrant/js-client-rest'
+      - '@raycast/api'
+      - '@rockset/client'
+      - '@smithy/eventstream-codec'
+      - '@smithy/protocol-http'
+      - '@smithy/signature-v4'
+      - '@smithy/util-utf8'
+      - '@spider-cloud/spider-client'
+      - '@supabase/postgrest-js'
+      - '@supabase/supabase-js'
+      - '@tensorflow-models/universal-sentence-encoder'
+      - '@tensorflow/tfjs-converter'
+      - '@tensorflow/tfjs-core'
+      - '@upstash/ratelimit'
+      - '@upstash/redis'
+      - '@upstash/vector'
+      - '@vercel/kv'
+      - '@vercel/postgres'
+      - '@volar/vue-language-plugin-pug'
+      - '@volar/vue-typescript'
+      - '@writerai/writer-sdk'
+      - '@xata.io/client'
+      - '@xenova/transformers'
+      - '@zilliz/milvus2-sdk-node'
+      - apify-client
+      - assemblyai
+      - axios
+      - better-sqlite3
+      - cassandra-driver
+      - cborg
+      - cheerio
+      - chromadb
+      - closevector-common
+      - closevector-node
+      - closevector-web
+      - cohere-ai
+      - convex
+      - couchbase
+      - crypto-js
+      - discord.js
+      - dria
+      - duck-duck-scrape
+      - encoding
+      - epub2
+      - faiss-node
+      - fast-xml-parser
+      - firebase-functions
+      - google-auth-library
+      - googleapis
+      - handlebars
+      - hnswlib-node
+      - html-to-text
+      - ignore
+      - interface-datastore
+      - ioredis
+      - it-all
+      - jsdom
+      - jsonwebtoken
+      - llmonitor
+      - lodash
+      - lunary
+      - mammoth
+      - mongodb
+      - mysql2
+      - neo4j-driver
+      - node-llama-cpp
+      - notion-to-md
+      - officeparser
+      - openai
+      - pdf-parse
+      - peggy
+      - pg
+      - pg-copy-streams
+      - pickleparser
+      - playwright
+      - portkey-ai
+      - prettier
+      - puppeteer
+      - pyodide
+      - redis
+      - replicate
+      - sonix-speech-recognition
+      - srt-parser-2
+      - supports-color
+      - typeorm
+      - typescript
+      - typesense
+      - usearch
+      - vectordb
+      - voy-search
+      - weaviate-ts-client
+      - web-auth-library
+      - ws
+      - youtube-transcript
+      - youtubei.js
 
   '@opentelemetry/api-logs@0.49.1':
     dependencies:
@@ -9862,163 +10019,6 @@ snapshots:
   queue-microtask@1.2.3: {}
 
   quick-lru@5.1.1: {}
-
-  qvikchat@1.0.0(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(fast-xml-parser@4.4.0)(firebase-functions@5.0.1(firebase-admin@12.2.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)(prettier@3.3.2)(typescript@5.5.3):
-    dependencies:
-      '@genkit-ai/ai': 0.5.4
-      '@genkit-ai/core': 0.5.4
-      '@genkit-ai/dotprompt': 0.5.4
-      '@genkit-ai/firebase': 0.5.4(@google-cloud/firestore@7.9.0)(firebase-admin@12.2.0)(firebase-functions@5.0.1(firebase-admin@12.2.0))(prettier@3.3.2)(typescript@5.5.3)
-      '@genkit-ai/flow': 0.5.4
-      '@genkit-ai/google-cloud': 0.5.4(prettier@3.3.2)(typescript@5.5.3)
-      '@genkit-ai/googleai': 0.5.4
-      '@langchain/community': 0.2.17(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(firebase-admin@12.2.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)
-      '@langchain/core': 0.2.14(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))(openai@4.52.3)
-      '@langchain/google-genai': 0.0.21(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))(openai@4.52.3)(zod@3.23.8)
-      '@langchain/openai': 0.2.1(langchain@0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3))
-      d3-dsv: 2.0.0
-      dotenv: 16.4.5
-      firebase-admin: 12.2.0
-      genkitx-chromadb: 0.5.4(openai@4.52.3)
-      genkitx-langchain: 0.5.4(@google-cloud/storage@7.11.2)(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(firebase-admin@12.2.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.52.3)
-      genkitx-openai: 0.10.0(@genkit-ai/ai@0.5.4)(@genkit-ai/core@0.5.4)
-      langchain: 0.2.8(chromadb@1.8.1(openai@4.52.3))(d3-dsv@2.0.0)(fast-xml-parser@4.4.0)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.52.3)
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - '@aws-crypto/sha256-js'
-      - '@aws-sdk/client-bedrock-agent-runtime'
-      - '@aws-sdk/client-bedrock-runtime'
-      - '@aws-sdk/client-dynamodb'
-      - '@aws-sdk/client-kendra'
-      - '@aws-sdk/client-lambda'
-      - '@aws-sdk/client-s3'
-      - '@aws-sdk/client-sagemaker-runtime'
-      - '@aws-sdk/client-sfn'
-      - '@aws-sdk/credential-provider-node'
-      - '@azure/search-documents'
-      - '@azure/storage-blob'
-      - '@browserbasehq/sdk'
-      - '@clickhouse/client'
-      - '@cloudflare/ai'
-      - '@datastax/astra-db-ts'
-      - '@elastic/elasticsearch'
-      - '@getmetal/metal-sdk'
-      - '@getzep/zep-cloud'
-      - '@getzep/zep-js'
-      - '@gomomento/sdk'
-      - '@gomomento/sdk-core'
-      - '@gomomento/sdk-web'
-      - '@google-ai/generativelanguage'
-      - '@google-cloud/firestore'
-      - '@google-cloud/storage'
-      - '@google/generative-ai'
-      - '@gradientai/nodejs-sdk'
-      - '@huggingface/inference'
-      - '@layerup/layerup-security'
-      - '@mendable/firecrawl-js'
-      - '@mlc-ai/web-llm'
-      - '@mozilla/readability'
-      - '@neondatabase/serverless'
-      - '@notionhq/client'
-      - '@opensearch-project/opensearch'
-      - '@pinecone-database/pinecone'
-      - '@planetscale/database'
-      - '@premai/prem-sdk'
-      - '@qdrant/js-client-rest'
-      - '@raycast/api'
-      - '@rockset/client'
-      - '@smithy/eventstream-codec'
-      - '@smithy/protocol-http'
-      - '@smithy/signature-v4'
-      - '@smithy/util-utf8'
-      - '@spider-cloud/spider-client'
-      - '@supabase/postgrest-js'
-      - '@supabase/supabase-js'
-      - '@tensorflow-models/universal-sentence-encoder'
-      - '@tensorflow/tfjs-converter'
-      - '@tensorflow/tfjs-core'
-      - '@upstash/ratelimit'
-      - '@upstash/redis'
-      - '@upstash/vector'
-      - '@vercel/kv'
-      - '@vercel/postgres'
-      - '@volar/vue-language-plugin-pug'
-      - '@volar/vue-typescript'
-      - '@writerai/writer-sdk'
-      - '@xata.io/client'
-      - '@xenova/transformers'
-      - '@zilliz/milvus2-sdk-node'
-      - apify-client
-      - assemblyai
-      - axios
-      - better-sqlite3
-      - cassandra-driver
-      - cborg
-      - cheerio
-      - chromadb
-      - closevector-common
-      - closevector-node
-      - closevector-web
-      - cohere-ai
-      - convex
-      - couchbase
-      - crypto-js
-      - discord.js
-      - dria
-      - duck-duck-scrape
-      - encoding
-      - epub2
-      - faiss-node
-      - fast-xml-parser
-      - firebase-functions
-      - google-auth-library
-      - googleapis
-      - handlebars
-      - hnswlib-node
-      - html-to-text
-      - ignore
-      - interface-datastore
-      - ioredis
-      - it-all
-      - jsdom
-      - jsonwebtoken
-      - llmonitor
-      - lodash
-      - lunary
-      - mammoth
-      - mongodb
-      - mysql2
-      - neo4j-driver
-      - node-llama-cpp
-      - notion-to-md
-      - officeparser
-      - openai
-      - pdf-parse
-      - peggy
-      - pg
-      - pg-copy-streams
-      - pickleparser
-      - playwright
-      - portkey-ai
-      - prettier
-      - puppeteer
-      - pyodide
-      - redis
-      - replicate
-      - sonix-speech-recognition
-      - srt-parser-2
-      - supports-color
-      - typeorm
-      - typescript
-      - typesense
-      - usearch
-      - vectordb
-      - voy-search
-      - weaviate-ts-client
-      - web-auth-library
-      - ws
-      - youtube-transcript
-      - youtubei.js
 
   range-parser@1.2.1: {}
 

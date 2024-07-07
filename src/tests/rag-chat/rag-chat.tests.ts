@@ -1,6 +1,6 @@
-import { defineChatEndpoint, getChatEndpointRunner } from "qvikchat/endpoints";
-import { setupGenkit } from "qvikchat/genkit";
-import { getDataRetriever } from "qvikchat/data-retrievers";
+import { defineChatEndpoint, getChatEndpointRunner } from "@oconva/qvikchat/endpoints";
+import { setupGenkit } from "@oconva/qvikchat/genkit";
+import { getDataRetriever } from "@oconva/qvikchat/data-retrievers";
 
 /**
  * Test suite for Chat Endpoint RAG Functionality.
