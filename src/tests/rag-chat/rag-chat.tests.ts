@@ -1,4 +1,7 @@
-import { defineChatEndpoint, getChatEndpointRunner } from "@oconva/qvikchat/endpoints";
+import {
+  defineChatEndpoint,
+  getChatEndpointRunner,
+} from "@oconva/qvikchat/endpoints";
 import { setupGenkit } from "@oconva/qvikchat/genkit";
 import { getDataRetriever } from "@oconva/qvikchat/data-retrievers";
 
@@ -18,7 +21,7 @@ describe("Test - Endpoint RAG Tests", () => {
   // Tests to be performed
   // Set to true to run the test
   const Tests = {
-    test_rag_works: false,
+    test_rag_works: true,
   };
 
   // default test timeout

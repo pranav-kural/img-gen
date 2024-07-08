@@ -1,4 +1,7 @@
-import { defineChatEndpoint, getChatEndpointRunner } from "@oconva/qvikchat/endpoints";
+import {
+  defineChatEndpoint,
+  getChatEndpointRunner,
+} from "@oconva/qvikchat/endpoints";
 import { setupGenkit } from "@oconva/qvikchat/genkit";
 
 /**

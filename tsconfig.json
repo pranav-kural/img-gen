@@ -2,7 +2,8 @@
   "include": ["src/**/*"],
   "compileOnSave": true,
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "noImplicitReturns": true,
     "outDir": "lib",
     "sourceMap": true,

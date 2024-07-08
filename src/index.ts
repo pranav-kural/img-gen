@@ -1,17 +1,19 @@
 import { setupGenkit, runServer } from "@oconva/qvikchat/genkit";
-import { defineChatEndpoint } from "@oconva/qvikchat/endpoints";
+import { definePublicEndpoints } from "./endpoints/public-endpoints";
 
 // Setup Genkit
-setupGenkit({
-  port: 3001,
-});
+setupGenkit();
 
-// Open-ended chat
-defineChatEndpoint({
-  endpoint: "chat",
-});
+// Method to define all endpoints of the project and run the server
+const defineEndpointsRunServer = async () => {
+  // define all endpoints
+  await definePublicEndpoints();
 
-// Run server
-runServer({
-  port: 3440
-});
+  // Run server
+  runServer({
+    port: 3404
+  });
+};
+
+// execute method to define endpoints and run server
+defineEndpointsRunServer();

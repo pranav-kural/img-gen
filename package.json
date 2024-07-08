@@ -12,8 +12,15 @@
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --no-watchman",
     "predeploy": "pnpm lint && pnpm format && pnpm build && pnpm test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "qvikchat",
+    "conversational ai",
+    "chat",
+    "chatbot",
+    "chat agent",
+    "langchain",
+    "genkit"],
+  "author": "Oconva <oconva.org@gmail.com> (https://github.com/oconva)",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.6.0",
@@ -33,6 +40,6 @@
     "typescript-eslint": "^7.15.0"
   },
   "dependencies": {
-    "@oconva/qvikchat": "^1.0.0"
+    "@oconva/qvikchat": "^1.0.2"
   }
 }
