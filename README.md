@@ -41,10 +41,10 @@ You can run the following commands to get started:
 
 ```bash copy
 npm install # or pnpm install
-npm run start # or pnpm start
+npm run dev # or pnpm dev
 ```
 
-The starter template predefines a chat endpoint in the `index.ts` file. Once, you run the project, you can test the endpoint from terminal using command below:
+The starter template predefines some chat endpoints. Once, you run the project, you can test the endpoints from terminal using command below:
 
 ```bash copy
 curl -X POST "http://127.0.0.1:3400/chat" -H "Content-Type: application/json"  -d '{"data": { "query": "Answer in one sentence: What is Firebase Firestore?" } }'
