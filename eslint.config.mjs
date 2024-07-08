@@ -4,7 +4,7 @@ import prettierConfig from "eslint-config-prettier";
 
 export default tseslint.config(
   {
-    ignores: ["dist"],
+    ignores: ["lib"],
   },
   eslint.configs.recommended,
   ...tseslint.configs.strict,
