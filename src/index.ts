@@ -10,9 +10,7 @@ const defineEndpointsRunServer = async () => {
   await definePublicEndpoints();
 
   // Run server
-  runServer({
-    port: 3404
-  });
+  runServer();
 };
 
 // execute method to define endpoints and run server
