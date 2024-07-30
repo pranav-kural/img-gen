@@ -4,6 +4,7 @@ import { defineChatEndpoint } from "@oconva/qvikchat/endpoints";
 // Setup Genkit
 setupGenkit();
 
+// Define server endpoint to generate image using the DALL-E model
 defineChatEndpoint({
   endpoint: "img",
   modelConfig: {
@@ -14,7 +15,6 @@ defineChatEndpoint({
     format: "media",
     contentType: "image/png",
   },
-  verbose: true,
 });
 
 // Run server

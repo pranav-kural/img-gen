@@ -89,6 +89,37 @@ genkit start
 
 You should be able to see the defined `img` endpoint under the **Flows** section in the left sidebar. Simply click on the endpoint and enter the query you want to test with. Clicking the **Run** button will send the query to the endpoint and the response generation process will start.
 
+## How it works?
+
+The project uses the [DALL·E 3](https://openai.com/index/dall-e-3) model to generate images based on the given prompt.
+
+We use [QvikChat](https://qvikchat.pkural.ca) to create the API endpoint that accepts the prompt text and returns the generated image.
+
+The `src/index.ts` file contains the code to that defines this endpoint. The code snippet below shows how the endpoint is defined:
+
+```typescript
+// Define server endpoint to generate image using the DALL-E model
+defineChatEndpoint({
+  endpoint: "img",
+  modelConfig: {
+    name: "dallE3",
+    response_format: "url",
+  },
+  outputSchema: {
+    format: "media",
+    contentType: "image/png",
+  },
+});
+```
+
+**Key points:**
+
+- `endpoint`: this is the server endpoint where the `HTTP POST` requests will be sent to.
+- `modelConfig`: this object contains the configuration for the model to be used. In this case, we are using the `dallE3` model and specifying that the response format should be a URL. This will ensure that model generates the image and returns the URL to the generated image. You can also use `b64_json` instead of `url` to get the base64 encoded image in the response.
+- `outputSchema`: this object specifies the format of the response that the endpoint is expected to produce. In this case, we are specifying that the response will be a media file with content type `image/png`.
+
+Thanks to QvikChat, you can easily enable API-key based authentication with usage limits and response caching (with some limitations), by simply configuring your endpoint according to your needs. For more information, check the [QvikChat documentation](https://qvikchat.pkural.ca).
+
 ## QvikChat
 
 **QvikChat** is an open-source framework that provides you with a solid foundation to build powerful AI-powered chat service endpoints quickly and efficiently. It includes support for **multiple types of conversations (open-ended, close-ended)**, **chat history**, **response caching**, **authentication**, **information retrieval using Retrieval Augmented Generation (RAG)**, and more.
