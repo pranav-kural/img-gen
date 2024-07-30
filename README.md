@@ -1,70 +1,69 @@
-# QvikChat Starter Template
+# Image Generation Service
 
-This is a starter template for QvikChat. It comes pre-configured with the following features:
+This projects provides an API endpoint to generate images using the [DALL·E 3](https://openai.com/index/dall-e-3) model. The endpoint accepts the prompt text and returns an image generated based on the given prompt.
 
-- **QvikChat**: QvikChat installed and configured to start serving chat endpoints.
-- **TypeScript**: TypeScript to allow you to write type-safe code efficiently.
-- **ESLint**: ESLint to enforce code quality and consistency.
-- **Prettier**: Prettier to format your code automatically and ensure consistent code style.
-- **Jest**: Jest to run your tests and ensure your code works as expected.
-- **GitHub Actions**: GitHub Actions to run your tests and lint your code automatically on every push.
-- **SWC**: For faster and more efficient TypeScript compilation.
-- **PNPM**: PNPM to manage your dependencies efficiently.
+This project was built using the [QvikChat](https://qvikchat.pkural.ca) framework. QvikChat is an open-source framework that provides you with a solid foundation to build powerful AI-powered chat service endpoints quickly and efficiently
+
+**Pre-requisites:**
+
+- You will need an OpenAI API Key to use the DALL·E 3 model. You can get one by signing up on the [OpenAI website](https://openai.com/api/).
+- To run this project locally, you will need Node.js installed on your machine.
+
+You can deploy this project to any Node.js platform if you want to. Although, if you do plan on deploying it, please ensure you have the necessary security controls in place, especially if the server endpoint is going to be exposed to the public. For setting up simple API-key based endpoint authentication, you can check the [Authentication](https://qvikchat.pkural.ca/authentication) page on QvikChat documentation.
 
 ## Getting Started
 
-Simply, clone the [QvikChat starter template](https://github.com/oconva/qvikchat-starter-template) to get started.
+Get started by cloning the repository:
 
 ```bash copy
-git clone https://github.com/oconva/qvikchat-starter-template.git
+git clone https://github.com/pranav-kural/img-gen.git
 ```
 
 ### Setup Environment Variables
 
+This project uses the [DALL·E 3](https://openai.com/index/dall-e-3) model for image generation. To be able to use it, you will require an OpenAI API Key.
+
 Create a `.env` file in the root of the project and add the following environment variables:
 
 ```env copy
-GOOGLE_GENAI_API_KEY=
 OPENAI_API_KEY=
-GOOGLE_APPLICATION_CREDENTIALS=
 ```
 
 Alternatively, you can copy the `.env.tmp` file or rename it to `.env` and fill in the values.
 
-By default QvikChat uses the Google GenAI, so to use QvikChat with default settings, you need to provide the `GOOGLE_GENAI_API_KEY`. You don't have to set values for other environment variables if you are using the default settings.
+### Install Dependencies
 
-Add value to the `OPENAI_API_KEY` variable if you're going to use OpenAI models and to the `GOOGLE_APPLICATION_CREDENTIALS` variable if you're going to use Firebase Firestore.
+Install the project dependencies using npm or pnpm:
+
+```bash
+npm install
+```
+
+Or
+
+```bash
+pnpm install
+```
 
 ### Running the Project
 
 You can run the following commands to get started:
 
-```bash copy
-npm install # or pnpm install
+```bash
 npm run dev # or pnpm dev
 ```
 
-The starter template predefines some chat endpoints. Once, you run the project, you can test the endpoints from terminal using command below:
+The `dev` script is set in `package.json` to run `build` and then `start` the server. When using the default configurations, the server will start on `http://localhost:3400`.
+
+Once, you run the project, you can test the endpoint defined in `src/index.ts` from terminal using command below:
 
 ```bash copy
-curl -X POST "http://127.0.0.1:3400/chat" -H "Content-Type: application/json"  -d '{"data": { "query": "Answer in one sentence: What is Firebase Firestore?" } }'
+curl -X POST "http://127.0.0.1:3400/img" -H "Content-Type: application/json"  -d '{"data": { "query": "a 3D painting like illustration of a cute lama in a hot balloon" } }'
 ```
 
 Above example points to `http://127.0.0.1:3400`. You can change this port and host depending on where you are running the server and on which port.
 
 You could also use the [Genkit Developer UI](#genkit-developer-ui) to test the endpoints.
-
-### Testing
-
-The starter template comes with Jest pre-configured to run your tests, and some tests predefined in the `src/tests` directory. You can run the tests using the following command:
-
-```bash copy
-npm run test # or pnpm test
-```
-
-Please ensure you have the environment variables set up before running the tests.
-
-By default, Jest is configured to test the source code in the `src` directory. You can change the configuration in the `jest.config.js` file, along with any other Jest configurations you may want to change.
 
 ### Genkit Developer UI
 
@@ -87,3 +86,31 @@ Then start the Genkit developer UI:
 ```bash copy
 genkit start
 ```
+
+You should be able to see the defined `img` endpoint under the **Flows** section in the left sidebar. Simply click on the endpoint and enter the query you want to test with. Clicking the **Run** button will send the query to the endpoint and the response generation process will start.
+
+## QvikChat
+
+**QvikChat** is an open-source framework that provides you with a solid foundation to build powerful AI-powered chat service endpoints quickly and efficiently. It includes support for **multiple types of conversations (open-ended, close-ended)**, **chat history**, **response caching**, **authentication**, **information retrieval using Retrieval Augmented Generation (RAG)**, and more.
+
+[Get Started](https://qvikchat.pkural.ca/getting-started) | [Documentation](https://qvikchat.pkural.ca)
+
+## QvikChat Starter Template
+
+This project was scaffolded using the [QvikChat starter template](https://github.com/oconva/qvikchat-starter-template). It comes pre-configured with the following features:
+
+- **QvikChat**: QvikChat installed and configured to start serving chat endpoints.
+- **TypeScript**: TypeScript to allow you to write type-safe code efficiently.
+- **ESLint**: ESLint to enforce code quality and consistency.
+- **Prettier**: Prettier to format your code automatically and ensure consistent code style.
+- **GitHub Actions**: GitHub Actions to run your tests and lint your code automatically on every push.
+- **SWC**: For faster and more efficient TypeScript compilation.
+- **PNPM**: PNPM to manage your dependencies efficiently.
+
+## Issues
+
+If you encounter any issues or bugs while using this project, please report them by following these steps:
+
+1. Check if the issue has already been reported by searching through [current issues](https://github.com/pranav-kural/img-gen/issues).
+2. If the issue hasn't been reported, create a new issue and provide a detailed description of the problem.
+3. Include steps to reproduce the issue and any relevant error messages or screenshots.

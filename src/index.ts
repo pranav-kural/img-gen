@@ -1,17 +1,21 @@
 import { setupGenkit, runServer } from "@oconva/qvikchat/genkit";
-import { definePublicEndpoints } from "./endpoints/public-endpoints";
+import { defineChatEndpoint } from "@oconva/qvikchat/endpoints";
 
 // Setup Genkit
 setupGenkit();
 
-// Method to define all endpoints of the project and run the server
-const defineEndpointsRunServer = async () => {
-  // define all endpoints
-  await definePublicEndpoints();
+defineChatEndpoint({
+  endpoint: "img",
+  modelConfig: {
+    name: "dallE3",
+    response_format: "url",
+  },
+  outputSchema: {
+    format: "media",
+    contentType: "image/png",
+  },
+  verbose: true,
+});
 
-  // Run server
-  runServer();
-};
-
-// execute method to define endpoints and run server
-defineEndpointsRunServer();
+// Run server
+runServer();
