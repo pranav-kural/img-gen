@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@oconva/qvikchat':
-        specifier: 2.0.0-alpha.3
-        version: 2.0.0-alpha.3(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(fast-xml-parser@4.4.1)(firebase-functions@5.0.1(firebase-admin@12.3.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2)(prettier@3.3.3)(typescript@5.5.4)
+        specifier: 2.0.0-alpha.4
+        version: 2.0.0-alpha.4(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(fast-xml-parser@4.4.1)(firebase-functions@5.0.1(firebase-admin@12.3.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2)(prettier@3.3.3)(typescript@5.5.4)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -1094,8 +1094,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oconva/qvikchat@2.0.0-alpha.3':
-    resolution: {integrity: sha512-1XEArRC9bjAaUlF3YVfPlBo/qUNlEQHvm2OLU3dwQUPaiRr/+0OB4y/Zci0LjJjs2onbp2wzFqPTbyXTMaV21Q==}
+  '@oconva/qvikchat@2.0.0-alpha.4':
+    resolution: {integrity: sha512-vNK3itabHo/Z5oYq9tQXWL6MeK+JunFwleAW2ghKWprOWOrnWthqda5TX5/oAkXmWOu+ykHyPLyL+qotvebwsg==}
 
   '@opentelemetry/api-logs@0.49.1':
     resolution: {integrity: sha512-kaNl/T7WzyMUQHQlVq7q0oV4Kev6+0xFwqzofryC66jgGMacd0QH5TwfpbUwSTby+SdAdprAe5UKMvBw4tKS5Q==}
@@ -2533,9 +2533,6 @@ packages:
     resolution: {integrity: sha512-Jh/AIwwgaxan+7ZUUmRLCjtchyDiqh4KjBJ5tW3plBZb5iL/BPcso8A5DlzeD9qlw0duCamnNdpFjxwaT0KyKg==}
     engines: {node: '>=14'}
 
-  genkitx-chromadb@0.5.8:
-    resolution: {integrity: sha512-vvjBMh+K0EBTYUXWnfP7vwhfid61TmCpDS6BMofNb7NFVutiRjHTB11U9RMxY0Pp24vOKdRxStgATEU07rygOg==}
-
   genkitx-langchain@0.5.8:
     resolution: {integrity: sha512-bfu7LbmxAVAF4CX9pwRlUlmvYyD8a81nHSbvE84csRKIfPFnzWsP/pxninpOKfAfoaEk1m44OQP8lQDShZnn5Q==}
 
@@ -3929,10 +3926,6 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  ts-md5@1.3.1:
-    resolution: {integrity: sha512-DiwiXfwvcTeZ5wCE0z+2A9EseZsztaiZtGrtSaY5JOD7ekPnR/GoIVD5gXZAlK9Na9Kvpo9Waz5rW64WKAWApg==}
-    engines: {node: '>=12'}
-
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
@@ -4777,7 +4770,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@oconva/qvikchat@2.0.0-alpha.3(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(fast-xml-parser@4.4.1)(firebase-functions@5.0.1(firebase-admin@12.3.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2)(prettier@3.3.3)(typescript@5.5.4)':
+  '@oconva/qvikchat@2.0.0-alpha.4(@google-cloud/firestore@7.9.0)(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(fast-xml-parser@4.4.1)(firebase-functions@5.0.1(firebase-admin@12.3.0))(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2)(prettier@3.3.3)(typescript@5.5.4)':
     dependencies:
       '@genkit-ai/ai': 0.5.8
       '@genkit-ai/core': 0.5.8
@@ -4793,7 +4786,6 @@ snapshots:
       d3-dsv: 2.0.0
       dotenv: 16.4.5
       firebase-admin: 12.3.0
-      genkitx-chromadb: 0.5.8(openai@4.53.2)
       genkitx-langchain: 0.5.8(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(firebase-admin@12.3.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2)
       genkitx-openai: 0.10.0(@genkit-ai/ai@0.5.8)(@genkit-ai/core@0.5.8)
       langchain: 0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.21)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.1)(openai@4.53.2)
@@ -4825,7 +4817,6 @@ snapshots:
       - '@google-ai/generativelanguage'
       - '@google-cloud/firestore'
       - '@google-cloud/storage'
-      - '@google/generative-ai'
       - '@gradientai/nodejs-sdk'
       - '@huggingface/inference'
       - '@langchain/anthropic'
@@ -5674,7 +5665,7 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
 
   '@types/bunyan@1.8.9':
     dependencies:
@@ -5695,7 +5686,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
 
   '@types/content-disposition@0.5.8': {}
 
@@ -5723,7 +5714,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.5':
     dependencies:
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -5776,7 +5767,7 @@ snapshots:
 
   '@types/jsonwebtoken@9.0.6':
     dependencies:
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
 
   '@types/keygrip@1.0.6': {}
 
@@ -5819,7 +5810,7 @@ snapshots:
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 18.19.42
+      '@types/node': 22.0.0
       form-data: 4.0.0
 
   '@types/node@18.19.42':
@@ -5851,7 +5842,7 @@ snapshots:
   '@types/request@2.48.12':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.1
 
@@ -5864,12 +5855,12 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
       '@types/send': 0.17.4
 
   '@types/shimmer@1.2.0': {}
@@ -6173,6 +6164,7 @@ snapshots:
       openai: 4.53.2
     transitivePeerDependencies:
       - encoding
+    optional: true
 
   cjs-module-lexer@1.3.1: {}
 
@@ -6716,20 +6708,6 @@ snapshots:
       - encoding
       - supports-color
 
-  genkitx-chromadb@0.5.8(openai@4.53.2):
-    dependencies:
-      '@genkit-ai/ai': 0.5.8
-      '@genkit-ai/core': 0.5.8
-      chromadb: 1.8.1(openai@4.53.2)
-      ts-md5: 1.3.1
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - '@google/generative-ai'
-      - cohere-ai
-      - encoding
-      - openai
-      - supports-color
-
   genkitx-langchain@0.5.8(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(firebase-admin@12.3.0)(handlebars@4.7.8)(ignore@5.3.1)(jsonwebtoken@9.0.2)(openai@4.53.2):
     dependencies:
       '@genkit-ai/ai': 0.5.8
@@ -7156,6 +7134,7 @@ snapshots:
       whatwg-fetch: 3.6.20
     transitivePeerDependencies:
       - encoding
+    optional: true
 
   joi@17.13.3:
     dependencies:
@@ -7771,7 +7750,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.13
+      '@types/node': 22.0.0
       long: 5.2.3
 
   proxy-addr@2.0.7:
@@ -8073,8 +8052,6 @@ snapshots:
     dependencies:
       typescript: 5.5.4
 
-  ts-md5@1.3.1: {}
-
   tslib@2.6.3: {}
 
   tsx@4.16.2:
@@ -8153,7 +8130,8 @@ snapshots:
 
   websocket-extensions@0.1.4: {}
 
-  whatwg-fetch@3.6.20: {}
+  whatwg-fetch@3.6.20:
+    optional: true
 
   whatwg-url@5.0.0:
     dependencies:

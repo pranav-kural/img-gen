@@ -1,11 +1,8 @@
-import { setupGenkit, runServer } from "@oconva/qvikchat/genkit";
-import { defineChatEndpoint } from "@oconva/qvikchat/endpoints";
+import { configureAndRunServer } from "@oconva/qvikchat";
+import { type DefineChatEndpointConfig } from "@oconva/qvikchat/endpoints";
 
-// Setup Genkit
-setupGenkit();
-
-// Define server endpoint to generate image using the DALL-E model
-defineChatEndpoint({
+// Configurations for the image generation endpoint (using DALL·E 3 model)
+const endpointConfig: DefineChatEndpointConfig = {
   endpoint: "img",
   modelConfig: {
     name: "dallE3",
@@ -15,7 +12,9 @@ defineChatEndpoint({
     format: "media",
     contentType: "image/png",
   },
-});
+};
 
-// Run server
-runServer();
+// Configure and run the server
+configureAndRunServer({
+  endpointConfigs: [endpointConfig],
+});

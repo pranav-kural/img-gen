@@ -99,11 +99,16 @@ The project uses the [DALL·E 3](https://openai.com/index/dall-e-3) model to gen
 
 We use [QvikChat](https://qvikchat.pkural.ca) to create the API endpoint that accepts the prompt text and returns the generated image.
 
-The `src/index.ts` file contains the code to that defines this endpoint. The code snippet below shows how the endpoint is defined:
+The `src/index.ts` file contains the code that defines this endpoint. We first define the configurations for the image generation endpoint, and then provide these configurations to the `configureAndRunServer` method that will create the endpoint using the provided configurations and then start the server.
+
+The code snippet below shows how the endpoint is configured:
 
 ```typescript
-// Define server endpoint to generate image using the DALL-E model
-defineChatEndpoint({
+import { configureAndRunServer } from "@oconva/qvikchat";
+import { type DefineChatEndpointConfig } from "@oconva/qvikchat/endpoints";
+
+// Configurations for the image generation endpoint (using DALL·E 3 model)
+const endpointConfig: DefineChatEndpointConfig = {
   endpoint: "img",
   modelConfig: {
     name: "dallE3",
@@ -113,6 +118,11 @@ defineChatEndpoint({
     format: "media",
     contentType: "image/png",
   },
+};
+
+// Configure and run the server
+configureAndRunServer({
+  endpointConfigs: [endpointConfig],
 });
 ```
 
