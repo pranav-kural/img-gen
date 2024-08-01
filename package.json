@@ -29,9 +29,9 @@
     "eslint-config-prettier": "^9.1.0",
     "nodemon": "^3.1.4",
     "prettier": "^3.3.3",
-    "tsx": "^4.16.2",
+    "tsx": "^4.16.3",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.18.0"
+    "typescript-eslint": "^8.0.0"
   },
   "dependencies": {
     "@oconva/qvikchat": "2.0.0-alpha.4",
