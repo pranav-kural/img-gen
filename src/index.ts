@@ -1,5 +1,7 @@
-import { configureAndRunServer } from "@oconva/qvikchat";
-import { type DefineChatEndpointConfig } from "@oconva/qvikchat/endpoints";
+import {
+  configureAndRunServer,
+  DefineChatEndpointConfig,
+} from "@oconva/qvikchat";
 
 // Configurations for the image generation endpoint (using DALL·E 3 model)
 const endpointConfig: DefineChatEndpointConfig = {
