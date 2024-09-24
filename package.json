@@ -21,7 +21,7 @@
   "author": "Pranav Kural (https://github.com/pranav-kural)",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.11.0",
+    "@eslint/js": "^9.11.1",
     "@swc/cli": "^0.4.0",
     "@types/cors": "^2.8.17",
     "@types/eslint__js": "^8.42.3",
