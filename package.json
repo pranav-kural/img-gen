@@ -21,7 +21,7 @@
   "author": "Pranav Kural (https://github.com/pranav-kural)",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.11.0",
+    "@eslint/js": "^9.11.1",
     "@swc/cli": "^0.4.0",
     "@types/cors": "^2.8.17",
     "@types/eslint__js": "^8.42.3",
@@ -31,7 +31,7 @@
     "prettier": "^3.3.3",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0"
+    "typescript-eslint": "^8.8.0"
   },
   "dependencies": {
     "@oconva/qvikchat": "2.0.2",
