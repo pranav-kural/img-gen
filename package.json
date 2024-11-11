@@ -21,17 +21,17 @@
   "author": "Pranav Kural (https://github.com/pranav-kural)",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.11.0",
-    "@swc/cli": "^0.4.0",
+    "@eslint/js": "^9.14.0",
+    "@swc/cli": "^0.5.0",
     "@types/cors": "^2.8.17",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
-    "tsx": "^4.19.1",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0"
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
   },
   "dependencies": {
     "@oconva/qvikchat": "2.0.2",
