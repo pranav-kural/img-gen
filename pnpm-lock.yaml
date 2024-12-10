@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.2
         version: 2.0.2(@google-cloud/storage@7.12.0)(chromadb@1.8.1(openai@4.53.2))(fast-xml-parser@4.4.1)(google-auth-library@9.13.0)(handlebars@4.7.8)(ignore@5.3.2)(jsonwebtoken@9.0.2)(openai@4.53.2)
       zod:
-        specifier: ^3.23.8
-        version: 3.23.8
+        specifier: ^3.24.0
+        version: 3.24.0
     devDependencies:
       '@eslint/js':
         specifier: ^9.11.0
@@ -1186,6 +1186,7 @@ packages:
 
   acorn-import-assertions@1.9.0:
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
 
@@ -1547,6 +1548,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3026,8 +3028,8 @@ packages:
     peerDependencies:
       zod: ^3.23.3
 
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+  zod@3.24.0:
+    resolution: {integrity: sha512-Hz+wiY8yD0VLA2k/+nsg2Abez674dDGTai33SwNvMPuf9uIrBC9eFgIMQxBBbHFxVXi8W+5nX9DcAh9YNSQm/w==}
 
 snapshots:
 
@@ -3181,7 +3183,7 @@ snapshots:
       json5: 2.2.3
       node-fetch: 3.3.2
       partial-json: 0.1.7
-      zod: 3.23.8
+      zod: 3.24.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3198,8 +3200,8 @@ snapshots:
       async-mutex: 0.5.0
       express: 4.19.2
       json-schema: 0.4.0
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod: 3.24.0
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3210,7 +3212,7 @@ snapshots:
       front-matter: 4.0.2
       handlebars: 4.7.8
       node-fetch: 3.3.2
-      zod: 3.23.8
+      zod: 3.24.0
 
   '@genkit-ai/flow@0.5.9':
     dependencies:
@@ -3224,7 +3226,7 @@ snapshots:
       firebase-admin: 12.3.0
       firebase-functions: 5.0.1(firebase-admin@12.3.0)
       uuid: 9.0.1
-      zod: 3.23.8
+      zod: 3.24.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3236,7 +3238,7 @@ snapshots:
       '@google/generative-ai': 0.15.0
       google-auth-library: 9.13.0
       node-fetch: 3.3.2
-      zod: 3.23.8
+      zod: 3.24.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3326,8 +3328,8 @@ snapshots:
       langchain: 0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2)
       langsmith: 0.1.40(@langchain/core@0.2.19(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))(openai@4.53.2))(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))(openai@4.53.2)
       uuid: 10.0.0
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod: 3.24.0
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     optionalDependencies:
       '@google-cloud/storage': 7.12.0
       chromadb: 1.8.1(openai@4.53.2)
@@ -3366,17 +3368,17 @@ snapshots:
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 10.0.0
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod: 3.24.0
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     transitivePeerDependencies:
       - langchain
       - openai
 
-  '@langchain/google-genai@0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.23.8)':
+  '@langchain/google-genai@0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.24.0)':
     dependencies:
       '@google/generative-ai': 0.7.1
       '@langchain/core': 0.2.19(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))(openai@4.53.2)
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     transitivePeerDependencies:
       - langchain
       - openai
@@ -3387,8 +3389,8 @@ snapshots:
       '@langchain/core': 0.2.19(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))(openai@4.53.2)
       js-tiktoken: 1.0.12
       openai: 4.53.2
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod: 3.24.0
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     transitivePeerDependencies:
       - encoding
       - langchain
@@ -3433,14 +3435,14 @@ snapshots:
       '@genkit-ai/googleai': 0.5.9(@genkit-ai/ai@0.5.9)(@genkit-ai/core@0.5.9)
       '@langchain/community': 0.2.22(@google-cloud/storage@7.12.0)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(firebase-admin@12.3.0)(google-auth-library@9.13.0)(handlebars@4.7.8)(ignore@5.3.2)(jsonwebtoken@9.0.2)(openai@4.53.2)
       '@langchain/core': 0.2.19(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))(openai@4.53.2)
-      '@langchain/google-genai': 0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.23.8)
+      '@langchain/google-genai': 0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.24.0)
       '@langchain/openai': 0.2.5(langchain@0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2))
       d3-dsv: 2.0.0
       dotenv: 16.4.5
       firebase-admin: 12.3.0
       genkitx-openai: 0.10.0(@genkit-ai/ai@0.5.9)(@genkit-ai/core@0.5.9)
       langchain: 0.2.12(@langchain/community@0.2.22)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(handlebars@4.7.8)(ignore@5.3.2)(openai@4.53.2)
-      zod: 3.23.8
+      zod: 3.24.0
     transitivePeerDependencies:
       - '@aws-crypto/sha256-js'
       - '@aws-sdk/client-bedrock-agent-runtime'
@@ -4783,7 +4785,7 @@ snapshots:
       '@genkit-ai/ai': 0.5.9
       '@genkit-ai/core': 0.5.9
       openai: 4.53.2
-      zod: 3.23.8
+      zod: 3.24.0
     transitivePeerDependencies:
       - encoding
 
@@ -5131,11 +5133,11 @@ snapshots:
       p-retry: 4.6.2
       uuid: 10.0.0
       yaml: 2.5.0
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod: 3.24.0
+      zod-to-json-schema: 3.23.2(zod@3.24.0)
     optionalDependencies:
       '@langchain/community': 0.2.22(@google-cloud/storage@7.12.0)(@langchain/google-genai@0.0.23)(chromadb@1.8.1(openai@4.53.2))(d3-dsv@2.0.0)(fast-xml-parser@4.4.1)(firebase-admin@12.3.0)(google-auth-library@9.13.0)(handlebars@4.7.8)(ignore@5.3.2)(jsonwebtoken@9.0.2)(openai@4.53.2)
-      '@langchain/google-genai': 0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.23.8)
+      '@langchain/google-genai': 0.0.23(langchain@0.2.12)(openai@4.53.2)(zod@3.24.0)
       chromadb: 1.8.1(openai@4.53.2)
       d3-dsv: 2.0.0
       fast-xml-parser: 4.4.1
@@ -5867,8 +5869,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-to-json-schema@3.23.2(zod@3.23.8):
+  zod-to-json-schema@3.23.2(zod@3.24.0):
     dependencies:
-      zod: 3.23.8
+      zod: 3.24.0
 
-  zod@3.23.8: {}
+  zod@3.24.0: {}
